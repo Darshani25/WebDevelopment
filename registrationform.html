@@ -1,0 +1,117 @@
+<html>
+<!DOCTYPE html>
+<title>Registration Form</title>
+<head></head>
+<style>
+    h1{
+        text-align:center;  
+    }
+    .center{
+        margin-left:140px;
+        width:78%;
+        padding-left:70px;
+    }
+    
+    .form1{
+       
+        border:1px solid black;
+        width:40%;
+        position:relative;
+        margin-left:25%;
+        padding:15px;
+        padding-left:10px;
+        background-color:lightgray;    
+   }
+  .form2{
+       background-color:lightgray;    
+      width:41.5%;
+      text-align:center;
+      border:1px solid black;
+      padding:5px;
+      margin-left:25%;
+
+
+  }
+  button{
+      text-align:center;
+
+  }
+  .save{
+     
+    margin-left:80px;
+    float:left;
+  }
+
+    .cancel{
+       
+    float:left;
+    margin-left:10px;
+    }
+  label{
+      margin-left:10px;
+  }
+
+input{
+     margin-left:20px;
+
+}
+</style>
+<body>
+ <h1>Registration Form</h1>
+ <div class="center">
+    <form>
+   
+    <div class="form1">
+    
+        <label margin-left="10px">First Name</label>
+        <input type="text" margin-left="10px"><br><br>
+
+        <label>Last Name</label>
+        <input type="text"><br><br>
+
+        <label>Date of Birth</label>
+        <input type="date" ><br><br>
+
+        <label>Gender</label>
+        <input type="radio" name="gender">Male</input>
+
+        <input type="radio" name="gender">Female</input><br><br>
+
+        <label>Country</label>
+        <select>
+             <option>India</option>
+            <option>US</option>
+            <option>Sirlanka</option>
+        </select><br><br>
+
+        <label>Email</label>
+        <input type="email"><br><br>
+
+        <label>Password</label>
+        <input type="password"><br><br>
+
+        <label >Comments</label><br><br>
+        <textarea cols="30" rows="5"></textarea><br><br>
+
+        <input type="checkbox"></input>
+        <label>I agree to the terms and conditions</label><br><br>
+
+        <button type="save" value="Submit" class="save">Submit</button>     
+        <button type="easer" value="cancel" class="cancel">Cancel</button><br><br><br>
+
+    </div>
+
+    <form>
+    <div class="form2">
+     <fieldset> 
+    <legend>Choose your Favourite color: </legend> 
+        <input type="radio" name="color">Red</input>
+
+        <input type="radio" name="color">Yellow</input>
+    </fieldset> 
+    </div> 
+    </form>
+</form>
+</div>
+</body>
+</html>
