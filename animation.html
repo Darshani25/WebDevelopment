@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        /* .text-animation h2:hover{
+             animation-play-state: paused; 
+        } */
+        div{
+            height: 100px;
+            width: 260px;
+            background:brown;
+             animation-duration: 3s;
+             color:white;
+        
+            animation-fill-mode: backwards ;  
+             animation-name: movingtext; 
+             animation-delay: 2s;
+             position: relative;
+             margin: 0 auto;
+             text-align: center;
+            
+        }
+        div:hover{
+            margin-top: 20px;
+            transform:rotate(180deg);
+            transition-duration: 5s;
+            /* transition-delay: 5s; */
+            cursor: pointer;
+            color:white;
+            animation-play-state: paused; 
+        }
+        /* .text-animation h2{
+            font-size: large;
+            text-align: center;
+            color: brown;
+            animation-name: movingtext;
+             animation-timing-function: linear; 
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards ; 
+           
+
+        } */
+        /* div h2:hover{
+            color: aqua;
+            font-size: 20px;
+        }*/
+        @keyframes movingtext{ 
+            from{top: 0px; background-color:green}
+            to{top: 500px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="text-animation">
+        <h2>WelCome To Web Developement!</h2>
+    </div>
+    <div>
+
+    </div>
+</body>
+</html>
