@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>createElement</title>
+</head>
+<body>
+   
+    <script>
+        
+        let d = document.createElement('div')
+        console.log(d)
+
+        d.append("Hello World")
+        let p = document.createElement('p')
+        console.log(p)
+            p.append("Inside P Tag")
+            d.appendChild(p)
+
+        // p.innerHTML("Inside p")
+         d.append(p)
+       
+         document.body.append(d)
+        
+
+        let input = document.createElement('input')
+        console.log(input)
+         input.setAttribute('type','text')
+         input.style.height='40px'
+        input.style.marginTop="40px"
+        p.style.color="brown"
+        p.style.backgroundColor="cyan"
+        p.style.padding="20px"
+        p.style.width="170px"
+        p.style.borderRadius="10px"
+        p.style.fontSize="25px"
+         input.getAttribute('text')
+
+         let b= document.createElement('b')
+         console.log(b)
+
+         d.append(b)
+        document.body.append(d)
+
+        var button = document.createElement("button")
+        button.innerHTML ="Submit"
+        document.body.append(button)
+        //button.style.border="1px solid black"
+        button.style.fontSize="20px"
+        button.style.borderRadius="5px"
+        button.style.width="130px"
+        button.style.height="40px"
+        button.style.color="white"
+        button.style.border="none"
+        button.style.backgroundColor="lime"
+    </script>  
+</body>
+</html>
